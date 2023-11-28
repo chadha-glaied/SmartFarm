@@ -1,0 +1,6 @@
+input , select , textarea{
+    border: 1px solid #afabab;
+    min-height: 30px;
+    border-radius: 5px;
+    width: 100%;
+}

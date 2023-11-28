@@ -1,0 +1,67 @@
+<section class="content" style="margin: 0px !important;">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>Analyse</h2>
+
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+
+                    <div class="body">
+                        <form>
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-sm-12">
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" [(ngModel)]="fich.type" name="type"
+                                                class="form-control" placeholder="type D'analyse">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="">
+                                    <button (click)=" ajouttype()" class="btn btn-raised g-bg-cyan">Valider</button>
+                                    <button class="btn btn-raised">Annuler</button>
+                                </div>
+
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>TYPE</th>
+                                            <th>Choses Aprevoir</th>
+                                            <th>ANALYSE</th>
+                                            <th>DATE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let tab of  Fiche_Patient">
+                                            <td>{{tab.type}}</td>
+                                            <td>{{tab.chosesAPrevoir}}</td>
+                                            <td><a target="_blank" href="http://localhost:4201/assets/pdf/{{tab.url_piece}}">{{tab.url_piece}}</a></td>
+                                       <td>{{tab.date_Edit}}</td>
+                                    
+                                 
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+
+
+
+                          
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

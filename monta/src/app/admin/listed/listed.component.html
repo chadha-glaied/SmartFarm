@@ -1,0 +1,64 @@
+<section class="content home">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+                <div class="header">
+                    <h2> Liste Des abonnés </h2>
+
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prénom</th>
+
+                                <th>Date de Naissance</th>
+                                    <!--<th>Role</th>
+                                    <th> ID</th>
+                                    <th>Id_Profile</th>
+                                    <th>Diplome</th>
+                                    <th>SpecialiteEnum</th>-->
+                                    <th>tel</th>
+
+                                    <th>CIN</th>
+                                    <th> Adresse</th>
+                                    <!--<th> Description</th>-->
+
+                                    <th>supp</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let element of ProfileDto ">
+                                       <td>{{element.nom}}</td>
+                                <td>{{element.prenom}} </td>
+                                <td>{{element.dateNaissance}}</td>
+                                <!--<td>{{element.lib_Role}}</td>
+                                <td>{{element.id_User}}</td>
+                                <td>{{element.id_Profile}} </td>
+                               
+                                <td>{{element.diplomeEnum}}</td>
+                                <td>{{element.specialiteEnum}}</td>
+                                -->
+                                <td>{{element.tel}}</td>
+                                 
+                              
+                                    <td>{{element.cin}}</td>
+                                    <td>{{element.adresse}}</td>
+                                    <!--<td>{{element.description}}</td>-->
+                               
+     <td><a   class="btn btn-raised btn-sm" (click)="supprimer(element.id_Profile)">supprimer</a></td>
+
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

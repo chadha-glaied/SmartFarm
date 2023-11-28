@@ -1,0 +1,47 @@
+
+<body class="theme-cyan">
+    <!-- Page Loader -->
+    
+        
+   
+    <section class="content home">
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="header">
+                        <h2> Température  </h2>
+                        <ul class="header-dropdown">
+                           
+                        </ul>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Temperature</th>
+                                    <th>Humidité</th>
+                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let data of PatientDTO ">
+                                    <td>{{data.iD_Patient}}</td>
+                                    <td>{{data.prenom}} </td>
+                                    <td>{{data.nom}}</td>
+                       
+                                    <td>{{data.cin}} </td>
+                                      <td>     {{data.dateDeNaissance}}</td> 
+                                </tr>
+                              
+                               
+                               
+                               
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><div class="color-bg"></div></body>

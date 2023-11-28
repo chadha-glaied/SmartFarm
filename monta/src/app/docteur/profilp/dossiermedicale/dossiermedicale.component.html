@@ -1,0 +1,418 @@
+
+    <section class="content" style="margin: 0;">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Consultaion</h2>
+    
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+    
+                        <div class="body">
+    
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                   
+                                    
+                                        <div class="body">
+                                            <div class="col-lg-10 col-sm-16">
+                                                <div class="form-group">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Titre</h5>
+                                                            </td>
+                                                            <td><input type="text"  [(ngModel)]="cons.titre" name="titre"><strong></strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Score de Glasgow</h5>
+                                                            </td>
+                                                            <td><input type="number" [(ngModel)]="cons.sorce_glasgow" name="sorce_glasgow"><b>/15</b></td>
+                                                        </tr>
+    
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Détresse respiratoire:</h5>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.d_respiratoire" name="d_respiratoire" >
+                                                                    <option selected value="true">Oui</option>
+                                                                    <option value="false">Non</option>
+                                                                </select>
+    
+                                                            </td>
+                                                        </tr>
+    
+    
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Etat de choc:</h5>
+                                                            </td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.choc" name="choc" >
+                                                                    <option selected value="true">Oui</option>
+                                                                    <option value="false">Non</option>
+                                                                </select>
+    
+                                                            </td>
+                                                        </tr>
+    
+    
+    
+    
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="card">
+                                    <div class="body">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <h5>Examen pleuro pulmonaire :</h5>
+                                                </td>
+    
+                                            </tr>
+                                        </table>
+                                    </div>
+    
+                                    <div class="body">
+    
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox"  [(ngModel)]="cons.pu_dyspnee" value="true" id="basic_checkbox_1" />
+                                                        <label for="basic_checkbox_1"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5>Dyspnée</h5>
+                                                </td>
+                                                <td>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox"[(ngModel)]="cons.pu_triage" value="true" id="basic_checkbox_2" />
+                                                        <label for="basic_checkbox_2"></label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h5>Tirage</h5>
+                                                </td>
+    
+                                            </tr>
+                                        </table>
+    
+                                        <table>
+                                            <tr>
+                                                
+                                                <td>
+                                                    <h5>Auscultation (si anormale préciser)</h5>
+                                                </td>
+                                                <td><textarea [(ngModel)]="cons.pu_auscultation" name="pu_auscultation"  ></textarea></td>
+                                            </tr>
+    
+                                        </table>
+                                    </div>
+    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="container-fluid">
+    
+    
+                                    <div class="row clearfix">
+                                        <!-- Basic Examples -->
+                                        <div class="col-lg-12 col-md-6 col-sm-12">
+                                            <div class="card">
+    
+                                                <div class="body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Examen cardio-vasculaire :</h5>
+                                                            </td>
+                                                            <td>
+                                                            <td></td>
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox"  id="basic_checkbox_3" />
+    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" [(ngModel)]="cons.cv_ivd"  id="basic_checkbox_4" />
+                                                                    <label for="basic_checkbox_4"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5>I.V.D</h5>
+                                                            </td>
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" [(ngModel)]="cons.cv_marbrures" value="true" id="basic_checkbox_5" />
+                                                                    <label for="basic_checkbox_5"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <h5>Marbrures</h5>
+                                                            </td>
+    
+                                                        </tr>
+                                                    </table>
+                                                    <table>
+                                                        <tr>
+                                                            
+                                                            <td>
+                                                                <h5>Auscultation (si anormale préciser)</h5>
+                                                            </td>
+                                                            <td><textarea  [(ngModel)]="cons.cv_ausculation" name="cv_ausculation" ></textarea></td>
+                                                        </tr>
+                                                    </table>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Basic Examples -->
+                                        <!-- With Icons -->
+    
+                                        <!-- #END# With Icons -->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="container-fluid">
+    
+    
+                                    <div class="row clearfix">
+                                        <!-- Basic Examples -->
+                                        <div class="col-lg-12 col-md-6 col-sm-12">
+                                            <div class="card">
+    
+                                                <div class="body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Examen neurologique :</h5>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+    
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox"[(ngModel)]="cons. ne_signes_meninges"  id="basic_checkbox_6" />
+                                                                    <label for="basic_checkbox_6"> <h5>Signes méningés</h5></label>
+                                                                </div>
+                                                            
+                                                            </td>
+                                                           
+    
+                                                        </tr>
+                                                        <tr><td><h5>PF</h5></td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.ne_pf" name="ne_pf" >
+                                                                    <option selected value="">selectionner un choix</option>
+    
+                                                                    <option value="Gauche">Gauche</option>
+                                                                    <option value="Droite">Droite</option>
+    
+                                                                </select>
+                                                            </td></tr>
+                                                            <tr><td><h5>RPM absent</h5></td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.ne_rpm" name="ne_rpm">
+                                                                    <option selected value="">selectionner un choix</option>
+    
+                                                                    <option value="Gauche">Gauche</option>
+                                                                    <option value="Droite">Droite</option>
+    
+                                                                </select>
+                                                            </td></tr>
+                                                          
+                                                        
+                                                            
+                                                        <tr><td><h5>Babinski</h5></td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.ne_babinski" name="ne_babinski">
+                                                                    <option selected value="Droite">selectionner un choix</option>
+    
+                                                                    
+                                                                    <option value="Gauche">Gauche</option>
+                                                                    <option value="Droite">Droite</option>
+    
+                                                                </select>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr><td><h5>Hémiplégie-Hemiparésie</h5></td>
+                                                            <td>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example" [(ngModel)]="cons.ne_hemiplegie" name="ne_hemiplegie" >
+                                                                    <option selected value="">selectionner un choix</option>
+    
+                                                                    <option value="Gauche">Gauche</option>
+                                                                    <option value="Droite">Droite</option>
+    
+                                                                </select>
+                                                            </td> 
+                                                        </tr>
+                                                    </table>
+    
+    
+    
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                        <!-- #END# Basic Examples -->
+                                        <!-- With Icons -->
+    
+                                        <!-- #END# With Icons -->
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="container-fluid">
+    
+    
+                                    <div class="row clearfix">
+                                        <!-- Basic Examples -->
+                                        <div class="col-lg-12 col-md-6 col-sm-12">
+                                            <div class="card">
+    
+                                                <div class="body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Examen abdominal :</h5>
+                                                            </td>
+                                                            <td>
+                                                            <td></td>
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" id="basic_checkbox_2" />
+    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="body">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="checkbox">
+                                                                    <input type="checkbox" [(ngModel)]="cons.abd_defense" value="true" id="basic_checkbox_11" />
+                                                                    <label for="basic_checkbox_11"><h5>Défense</h5></label>
+                                                                </div>
+                                                            </td>
+                                                            
+                                                           
+                                                           
+                                                        </tr>
+                                                        <tr> <td>
+
+                                                        </td><td>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox"[(ngModel)]="cons.abd_sensible" value="true" id="basic_checkbox_77" />
+                                                                <label for="basic_checkbox_7740"><h5>Abd sensible</h5></label>
+                                                            </div></td></tr>
+                                                        <tr><td>
+                                                            <div class="checkbox">
+                                                                <input type="checkbox"[(ngModel)]="cons.abd_meteorisme" value="true" id="basic_checkbox_12" />
+                                                                <label for="basic_checkbox_12"><h5>Météorisme</h5></label>
+                                                            </div>
+                                                        </td><td><div class="checkbox">
+                                                            <input type="checkbox" [(ngModel)]="cons.abd_orifices" value="true" id="basic_checkbox_13" />
+                                                            <label for="basic_checkbox_13"><h5>Orfices herniaires libres</h5></label>
+                                                        </div></td></tr>
+                                                        <tr> <td>
+                                                            <h5>TR</h5>
+                                                        </td><td><input type="text"  [(ngModel)]="cons.abd_tr" name="abd_tr"></td></tr>
+                                                    </table>
+                                                   
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #END# Basic Examples -->
+                                        <!-- With Icons -->
+    
+                                        <!-- #END# With Icons -->
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <!--ordonnance-->
+                    </table>
+                    <!--Examen physique-->
+                    <div class="card">
+    
+                        <div class="body">
+    
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                   
+                                    
+                                       <h1>Observation du docteur</h1>
+                                       <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Observation du docteur"  [(ngModel)]="cons.Examen_Physique" name="Examen_Physique" required style="height: 100px"></textarea>
+                                      </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ordonnance-->
+                    <div class="card">
+    
+                        <div class="body">
+    
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                   
+                                    
+                                       <h1>Ordonnance du patient</h1>
+                                       <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Ordonnance du patient" [(ngModel)]="cons.Ordonnonce_patient" name="Ordonnonce_patient" required style="height: 100px"></textarea>
+                                      </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+
+                        <div class="">
+                            <button (click)=" validerC()"
+                                class="btn btn-raised g-bg-cyan">Valider</button>
+                            <button class="btn btn-raised">Annuler</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
