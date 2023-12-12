@@ -20,8 +20,7 @@ import { RapportComponent } from './docteur/profilp/rapport/rapport.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ValidationComponent } from './register/validation/validation.component';
-import { ProdilepaComponent } from './technicien/prodilepa/prodilepa.component';
-import { TechnicienComponent } from './technicien/technicien.component';
+
 import { SafetyComponent } from './admin/safety/safety.component';
 
 
@@ -128,22 +127,7 @@ const routes: Routes = [
     path: 'Activer2',
     component: ActiverCompte2Component
   },
-  {
-    path: 'technicien',
-    component: TechnicienComponent,
-    children:[
-      {
-        path: 'profilpa/:idp',
-        component: ProdilepaComponent
-    
-      },
-    ]
-
-  },
   
-
-  
-
   {
     path: '',
     component: LoginComponent,

@@ -7,7 +7,7 @@ import { DocteurComponent } from './docteur/docteur.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 
-import { TechnicienComponent } from './technicien/technicien.component';
+
 import { ListepComponent } from './docteur/listep/listep.component';
 import { ProfilpComponent } from './docteur/profilp/profilp.component';
 
@@ -25,7 +25,7 @@ import { DemandeComponent } from './docteur/profilp/demande/demande.component';
 import { CommonModule } from '@angular/common';
 
 import { StatistiqueComponent } from './admin/statistique/statistique.component';
-import { ProdilepaComponent } from './technicien/prodilepa/prodilepa.component';
+
 import { AjoutdComponent } from './admin/ajoutd/ajoutd.component';
 import { AjouteUtlisateurComponent } from './admin/ajoute-utlisateur/ajoute-utlisateur.component';
 import { ActiverCompteComponent } from './admin/activer-compte/activer-compte.component';
@@ -43,7 +43,6 @@ import { SafetyComponent } from './admin/safety/safety.component';
     LoginComponent,
     AdminComponent,
 
-    TechnicienComponent,
     ListepComponent,
     ProfilpComponent,
     AjoutdComponent,
@@ -61,7 +60,7 @@ import { SafetyComponent } from './admin/safety/safety.component';
     DemandeComponent,
     
     StatistiqueComponent,
-    ProdilepaComponent,
+
     AjouteUtlisateurComponent,
     ActiverCompteComponent,
     ActiverCompte2Component,
